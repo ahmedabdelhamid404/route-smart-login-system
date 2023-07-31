@@ -113,7 +113,7 @@ function validation() {
   return "userName is false";
 }
 
-let userNameRegex = /^[a-z0-9_\.]{4,10}$/;
+let userNameRegex = /^[A-Za-z0-9_\.]{4,10}$/;
 let userEmailRegex = /^[a-z0-9]+@[a-z]+\.[a-z]{2,3}$/;
 let userPasswordRegex =
   /^(?=.*[A-Z].*[A-Z])(?=.*[!@#$&*])(?=.*[0-9].*[0-9])(?=.*[a-z].*[a-z].*[a-z]).{8,15}$/;
