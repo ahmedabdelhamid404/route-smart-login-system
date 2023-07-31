@@ -86,7 +86,7 @@ continueButton.addEventListener("click", function () {
       break;
     case "userPassword is false":
       birdImage.setAttribute("src", "images/you-did-something-wrong.png");
-      birdMessage.innerHTML = `Please enter a valid password:<br>1) Has two uppercase letters<br>2) Has one special case letter<br>3) Has two digits<br>4) Has three lowercase letters<br>5) length from 8 to 15 character`;
+      birdMessage.innerHTML = `Please enter a valid password:<br>1) Has at least two uppercase letters<br>2) Has at least one special case letter [!, @, #, $, &, *]<br>3) Has at least two digits<br>4) Has at least three lowercase letters<br>5) length from 8 to 15 character`;
       break;
   }
 });
