@@ -1,0 +1,11 @@
+@media screen and (max-width: 500px) {
+    form {
+        padding: 4.5rem 1rem;
+    }
+    h1 {
+        padding: 1.25rem;
+    }
+    .eye {
+        right: 6%;
+    }
+}

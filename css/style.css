@@ -1,0 +1,139 @@
+::selection {
+  background-color: #8a8a8a;
+  color: #eee;
+}
+
+body {
+  background-image: linear-gradient(
+    45deg,
+    rgba(42, 221, 228, 1) 0%,
+    rgba(181, 136, 247, 1) 100%
+  );
+  background-repeat: no-repeat;
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  font-family: "Titillium Web", sans-serif;
+  position: absolute;
+  color: white;
+}
+
+h2 {
+  color: #00ffff;
+}
+
+img {
+  width: 100%;
+}
+
+picture {
+  width: 15%;
+  margin-inline: auto;
+}
+
+.eye {
+  right: 0px;
+  bottom: 25%;
+  cursor: pointer;
+}
+
+.form-control {
+  background-color: transparent;
+  border: none;
+  color: #8a8a8a;
+  border-bottom: 2px solid #eee;
+  border-radius: 0px;
+  transition: border-color 0.25s ease-in-out;
+}
+
+.form-control:focus {
+  background-color: transparent;
+  box-shadow: none;
+  color: #8a8a8a;
+}
+
+.form-container {
+  width: 90%;
+  max-width: 500px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+}
+
+.info {
+  color: #8a8a8a;
+}
+
+form {
+  padding: 5rem 3.125rem;
+  position: relative;
+}
+
+.label {
+  position: relative;
+  top: 30px;
+  left: 12px;
+  font-size: 1rem;
+  transition: all 0.35s ease-in-out;
+  color: #8a8a8a;
+  z-index: -1;
+}
+
+.key-icon {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    45deg,
+    rgba(42, 221, 228, 1) 0%,
+    rgba(181, 136, 247, 1) 100%
+  );
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-key {
+  width: 4.375rem;
+  height: 4.375rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  color: #8a8a8a;
+}
+
+.btn {
+  --bs-btn-padding-x: 4.5rem;
+}
+
+.swal2-title {
+  padding: 0;
+}
+
+.swal2-image {
+  max-width: 8.125rem;
+}
+.avatar-container img {
+  cursor: pointer;
+}
+
+.img-select {
+  border: 5px solid rgba(181, 136, 247, 1);
+  border-radius: 50%;
+}

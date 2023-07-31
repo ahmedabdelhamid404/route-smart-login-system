@@ -1,0 +1,60 @@
+body {
+  background-image: linear-gradient(
+    45deg,
+    rgba(42, 221, 228, 1) 0%,
+    rgba(181, 136, 247, 1) 100%
+  );
+  background-repeat: no-repeat;
+  font-family: "Roboto", sans-serif;
+}
+
+.logo-image {
+  max-width: 2.5rem;
+}
+
+h1 {
+  font-family: "Titillium Web", sans-serif;
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+nav {
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+}
+
+.content {
+  width: 90%;
+  max-width: 500px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  text-align: center;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.swal2-title {
+  padding: 0;
+}
+
+.swal2-image {
+  max-width: 8.125rem;
+}

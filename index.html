@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Site Title -->
+    <title>Smart Login</title>
+    <!-- Site Icon -->
+    <link rel="shortcut icon" href="images/key.png" type="image/x-icon" />
+    <!-- Google Fonts Link -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Titillium+Web:wght@200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Link -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- FontAwesome Linkj -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- SweetAlert Style -->
+    <link rel="stylesheet" href="css/sweetalert2.min.css" />
+    <!-- SweetAlert Theme -->
+    <link rel="stylesheet" href="css/borderless.min.css" />
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Media Style Sheet -->
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
+  <body class="py-5">
+    <div id="logInForm"
+      class="container d-flex align-items-center justify-content-center d-block"
+    >
+      <h1 class="display-1 text-center">Smart Login System</h1>
+      <form class="form-container mt-5">
+        <div class="key-icon">
+          <div class="inner-key">
+            <i class="fa-solid fa-key"></i>
+          </div>
+        </div>
+        <div class="bird-section text-center mb-4">
+          <picture class="d-block">
+            <img
+              src="images/bird-not-looking-to-password.png"
+              alt="bird-image"
+            />
+          </picture>
+          <p class="info">PLease enter your info so I can let you in</p>
+        </div>
+        <div class="title">
+          <h2>Login</h2>
+        </div>
+        <div class="inputs mt-2">
+          <label class="label mb-2" for="userEmail">
+            <i class="fa-solid fa-envelope me-2"></i>
+            E-mail Address
+          </label>
+          <input type="text" name="userEmail" class="form-control mb-4" />
+          <div class="password-container position-relative">
+            <label class="label mb-2" for="userPassword">
+              <i class="fa-solid fa-lock me-2"></i>
+              Password
+            </label>
+            <input type="password" name="userPassword" class="form-control mb-5" />
+            <div class="eye position-absolute">
+              <i class="d-none fa-solid fa-eye"></i>
+              <i class="d-block fa-solid fa-eye-slash"></i>
+            </div>
+          </div>
+        </div>
+        <div class="signup-switch mb-4 text-center">
+          <span class="me-2">Don't have account?</span>
+          <span>
+            <button
+              id="signup-switch"
+              type="button"
+              class="btn btn-outline-info px-3 py-1 border-0"
+            >
+              Sign Up
+            </button>
+          </span>
+        </div>
+        <button
+          id="loginButton"
+          type="button"
+          class="btn btn-info m-auto d-block"
+        >
+          Login
+        </button>
+      </form>
+    </div>
+    <div id="signUpForm"
+      class="container d-flex align-items-center justify-content-center d-none"
+    >
+      <h1 class="display-1 text-center">Smart Login System</h1>
+      <form class="form-container mt-5">
+        <div class="key-icon">
+          <div class="inner-key">
+            <i class="fa-solid fa-key"></i>
+          </div>
+        </div>
+        <div class="bird-section text-center mb-4">
+          <picture class="d-block">
+            <img
+              id="feedBackImage"
+              src="images/say-hello-to-user.png"
+              alt="bird-image"
+            />
+          </picture>
+          <p class="info bird-feddback">PLease fill the reuired data</p>
+        </div>
+        <div class="title">
+          <h2>Signup</h2>
+        </div>
+        <div class="inputs mt-2">
+          <label class="label mb-2" for="userNameSignUp">
+            <i class="fa-solid fa-user me-2"></i>
+            User Name
+          </label>
+          <input type="text" name="userNameSignUp" class="form-control mb-4" />
+          <label class="label mb-2" for="userEmailSignUp">
+            <i class="fa-solid fa-envelope me-2"></i>
+            E-mail Address
+          </label>
+          <input type="text" name="userEmailSignUp" class="form-control mb-4" />
+          <label class="label mb-2" for="userPasswordSignUp">
+            <i class="fa-solid fa-lock me-2"></i>
+            Password
+          </label>
+          <input type="text" name="userPasswordSignUp" class="form-control mb-5" />
+        </div>
+        <div class="signup-switch mb-4 text-center">
+          <span class="me-2">Already have account?</span>
+          <span>
+            <button
+              id="login-switch"
+              type="button"
+              class="btn btn-outline-info px-3 py-1 border-0"
+            >
+              Log In
+            </button>
+          </span>
+        </div>
+        <button
+          id="continueButton"
+          type="button"
+          class="btn btn-info m-auto d-block"
+        >
+          Continue
+        </button>
+      </form>
+    </div>
+    <div id="choosingAvatar"
+      class="container d-flex align-items-center justify-content-center d-none"
+    >
+      <h1 class="display-1 text-center">Smart Login System</h1>
+      <form class="form-container mt-5">
+        <div class="key-icon">
+          <div class="inner-key">
+            <i class="fa-solid fa-key"></i>
+          </div>
+        </div>
+        <div class="bird-section text-center mb-4">
+          <picture class="d-block">
+            <img
+              id="feedBackImage"
+              src="images/bird-not-looking-to-password.png"
+              alt="bird-image"
+            />
+          </picture>
+          <p class="info bird-feddback">Please choose avatar from the following</p>
+        </div>
+        <div class="avatar-container row g-4 text-center">
+          <div class="col-6">
+            <img class="rounded rounded-circle w-50" src="images/avatar-1.JPG" alt="avatar 1">
+          </div>
+          <div class="col-6">
+            <img class="rounded rounded-circle w-50" src="images/avatar-2.JPG" alt="avatar 1">
+          </div>
+          <div class="col-6">
+            <img class="rounded rounded-circle w-50" src="images/avatar-3.JPG" alt="avatar 1">
+          </div>
+          <div class="col-6">
+            <img class="rounded rounded-circle w-50" src="images/avatar-4.JPG" alt="avatar 1">
+          </div>
+        <button
+          id="finishButton"
+          type="button"
+          class="btn btn-info w-auto m-auto mt-5"
+        >
+          Finish SignUp
+        </button>
+      </form>
+    </div>
+    <!-- ? =====================> JS Files -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/sweetalert2.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

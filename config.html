@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Site Title -->
+    <title>Smart Login</title>
+    <!-- Site Icon -->
+    <link rel="shortcut icon" href="images/key.png" type="image/x-icon" />
+    <!-- Google Fonts Link -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Titillium+Web:wght@200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />  
+    <!-- Bootstrap Link -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- FontAwesome Linkj -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- SweetAlert Style -->
+    <link rel="stylesheet" href="css/sweetalert2.min.css" />
+    <!-- SweetAlert Theme -->
+    <link rel="stylesheet" href="css/borderless.min.css" />
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="css/config.css" />
+</head>
+<body class="vh-100 position-relative">
+  <nav class="navbar navbar-expand-lg text-center position-relative z-3">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img class="logo-image" src="images/key.png" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto mb-2 mb-lg-0 gap-4">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">
+              <i class="fa-solid fa-house"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">
+              <i class="fa-solid fa-user-group"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">
+              <i class="fa-solid fa-video"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">
+              <i class="fa-solid fa-people-group"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">
+              <i class="fa-solid fa-headset"></i>
+            </a>
+          </li>
+        </ul>
+        <div class="log-out">
+          <button id="logOut" class="btn btn-outline-warning">logout</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div id="Welcome"
+      class="container d-flex align-items-center justify-content-center d-block"
+    >
+      <h1 class="display-1 text-center">Smart Login System</h1>
+      <div class="content py-4 px-5">
+        <img id="userAvatar" class="rounded rounded-circle mb-3" src="" alt="your avatar">
+        <p>Welcome <span class="userName"></span>
+        </p>
+      </div>
+     <!-- ? =====================> JS Files -->
+     <script src="js/bootstrap.bundle.min.js"></script>
+     <script src="js/sweetalert2.min.js"></script>
+     <script src="js/config.js"></script>
+</body>
+</html>
